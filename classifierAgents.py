@@ -143,6 +143,7 @@ class ClassifierAgent(Agent):
         # Here you should insert code to call the classifier to
         # decide what to do based on features and use it to decide
         # what action to take.
+        #number = call_classifier(features)
         #
         # *******************************************************
 
@@ -153,5 +154,5 @@ class ClassifierAgent(Agent):
         # API to ask Pacman to stay where they are. We need to pass
         # the set of legal moves to teh API so it can do some safety
         # checking.
-        return api.makeMove(Directions.STOP, legal)
+        return api.makeMove(Directions.STOP, legal)#    need to replace Directions.STOP with  self.convertNumberToMove(number) or just state
 
